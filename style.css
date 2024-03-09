@@ -1,0 +1,250 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    background: linear-gradient(45deg, #003db6, #800080);
+
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    position: relative;
+}
+.type {
+    display: inline-block;
+    padding-right: 5px;
+    border-right: 4px solid black;
+    animation: blinkCursor 0.75 steps(1) infinite;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+@keyframes blinkCursor {
+    50%{
+        border-color: transparent;
+    }
+}
+
+.wrapper h1 span {
+    position: absolute;
+    display: block;
+  }
+  .wrapper h1 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, green);
+    animation: animateLine 1s infinite;
+  
+  }
+  @keyframes animateLine {
+    from{
+      left: -100%
+    }
+    to{
+      left: 100%;
+    }
+  }
+
+  .wrapper h1 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animateLineDown 1s infinite;
+    animation-delay: .25s;
+  } 
+  @keyframes animateLineDown{
+    from{
+      top: -100%;
+    }
+    to{
+      top: 100%;
+    }
+  }
+  .wrapper h1 span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, purple);
+    animation: animateLineRight 1s infinite;
+    animation-delay: .5s;
+  } 
+  @keyframes animateLineRight{
+    from{
+      right: -100%;
+    }
+    to{
+      right: 100%;
+    }
+  }
+  .wrapper h1 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f88818);
+    animation: animateLineUp 1s infinite;
+    animation-delay: .75s;
+  } 
+  @keyframes animateLineUp {
+    from{
+      bottom: -100%;
+    }
+    to{
+      bottom: 100%;
+    }
+  }
+  .wrapper {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 400px;
+
+}
+.papper {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.neon {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  padding: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .5s;
+  overflow: hidden;
+  color:#003db6;
+  position: relative;
+
+}
+.neon:hover {
+  box-shadow:  0 0 5px #03e9f4,
+  0 0 25px #03e9f4
+  0 0 50px #03e9f4
+  0 0 200px #03e9f4;
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+; background-color: #03e9f4;
+border-radius: 40px;
+}
+.wrapper button span {
+  position: absolute;
+  display: block;
+}
+.wrapper button span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animateLine 1s infinite;
+
+}
+@keyframes animateLine {
+  from{
+    left: -100%
+  }
+  to{
+    left: 100%;
+  }
+}
+
+.wrapper button span:nth-child(2){
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animateLineDown 1s infinite;
+  animation-delay: .25s;
+} 
+@keyframes animateLineDown{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 100%;
+  }
+}
+.wrapper button span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animateLineRight 1s infinite;
+  animation-delay: .5s;
+} 
+@keyframes animateLineRight{
+  from{
+    right: -100%;
+  }
+  to{
+    right: 100%;
+  }
+}
+.wrapper button span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animateLineUp 1s infinite;
+  animation-delay: .75s;
+} 
+@keyframes animateLineUp {
+  from{
+    bottom: -100%;
+  }
+  to{
+    bottom: 100%;
+  }
+}
+.tab-content {
+  display: none;
+}
+.favmems {
+ text-decoration: underline;
+}
+.deffavmem {
+  color: #ffffff;
+}
+.thanks {
+  color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: black;
+  text-align: center;
+  padding: 13px;
+}
+.poem-column {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px; 
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
